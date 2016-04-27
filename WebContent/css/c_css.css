@@ -1,6 +1,10 @@
 @CHARSET "UTF-8";
 
 
+.todo2 {
+	color:red;
+}
+
 .input-append .btn.dropdown-toggle {
     float: none;
 }
@@ -8,3 +12,5 @@
 .fu {
 	
 }
+
+
