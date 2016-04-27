@@ -12,10 +12,6 @@ $(function(){
 	
 	
 	
-	
-	
-	
-	
 	$('.closeall').click(function(){
 		  $('.panel-collapse.in').collapse('hide');
 		  console.log("cose");
