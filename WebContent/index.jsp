@@ -42,6 +42,29 @@
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
       	<ul>
+      		<li>
+      			JavaScript
+      				<ul>
+      				
+      				</ul>
+      		<li/>
+      		<li>
+      			CSS
+      		<li/>
+      		<li>
+      			HTML
+      				<ul>
+      					<li>
+						<a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a>
+					</li>
+      				</ul>
+      		<li/>
+      		<li>
+      			jQuery
+      		<li/>
+      		<li>
+      			Bootstrap
+      		<li/>
 		<li>W3Schools
 		<ul>
 			<li>
