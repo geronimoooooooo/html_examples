@@ -328,6 +328,144 @@
           
        </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
+  
+  
+  <style type="text/css">
+/* There is no gutter between date, month and year fields */
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutter .form-control-feedback {
+    right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child) input {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.row.no-gutter [class*='col-']:not(:last-child) input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+</style>
+
+<form id="profileForm" method="post" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Birthday</label>
+        <div class="col-xs-9">
+            <div class="row no-gutter">
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="date" placeholder="Date" />
+                </div>
+
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="month" placeholder="Month" />
+                </div>
+
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="year" placeholder="Year" />
+                </div>
+            </div>
+
+            <!-- Create a hidden field which is combined by 3 fields above -->
+            <input type="hidden" name="dob" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-5 col-xs-offset-3">
+            <button type="submit" class="btn btn-default">Validate</button>
+        </div>
+    </div>
+</form>
+
+<div>
+<link href="/vendor/balloon/balloon.min.css" rel="stylesheet" />
+
+<style>
+.form-control-feedback {
+    pointer-events: auto;
+}
+</style>
+
+<form id="registrationForm" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Full name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="firstName" placeholder="First name" />
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Username</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" name="username" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Password</label>
+        <div class="col-xs-5">
+            <input type="password" class="form-control" name="password" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Gender</label>
+        <div class="col-xs-5">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="male" /> Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="female" /> Female
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="other" /> Other
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Date of birth</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/DD" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-9 col-xs-offset-3">
+            <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
+        </div>
+    </div>
+</form>
+
+</div>
+  
+  
+  
+  
 </div><!-- forms -->
 
 
