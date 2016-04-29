@@ -50,13 +50,16 @@
       		<li/>
       		<li>
       			CSS
+      			<ul>
+      				<li>
+				<a href="http://www.w3schools.com/css/css_examples.asp">W3Schools CSS Examples</a></li>
+      			</ul>
       		<li/>
       		<li>
       			HTML
       				<ul>
-      					<li>
-						<a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a>
-					</li>
+      					<li><a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a></li>
+      					<li><a href="http://www.w3schools.com/html/html_examples.asp">W3Schools HTML Examples</a></li>
       				</ul>
       		<li/>
       		<li>
@@ -64,25 +67,24 @@
       		<li/>
       		<li>
       			Bootstrap
+      				<ul>
+      				<li>
+				<a href="http://getbootstrap.com/components/">Bootstrap Components</a>	</li>
+				<li>
+				<a href="http://www.tutorialspark.com/twitterBootstrap/index.php">Bootstrap intro</a>
+			</li>
+      				</ul>
       		<li/>
 		<li>W3Schools
 		<ul>
-			<li>
-				<a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a>
-			</li>
-			<li>
-				<a href="http://www.w3schools.com/html/html_examples.asp">W3Schools HTML Examples</a>
-			</li>
-			<li>
-				<a href="http://www.w3schools.com/css/css_examples.asp">W3Schools CSS Examples</a>
-			</li>
+		
+			
+		
 		</ul>
 		</li>
 				<li>Bootstrap
 		<ul>
-			<li>
-				<a href="http://getbootstrap.com/components/">Bootstrap Components</a>
-			</li>
+			
 			
 		</ul>
 		</li>
@@ -100,9 +102,7 @@
 		
 		<li>Tutorialspark
 		<ul>
-			<li>
-				<a href="http://www.tutorialspark.com/twitterBootstrap/index.php">Bootstrap intro</a>
-			</li>
+			
 			<li>
 				<a href="http://www.tutorialspark.com/twitterBootstrap/TwitterBootstrap_Examples_Demos.php">Bootstrap Examples</a>
 			</li>
