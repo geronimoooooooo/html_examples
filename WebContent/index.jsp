@@ -12,6 +12,11 @@
 <script src="js/c_js.js"></script>
 <meta>
 <title>Start</title>
+<script> 
+    $(function(){
+      $("#fu_include").load("fu.jsp"); 
+    });
+    </script>
 </head>
 <body>
 <div class="container ">
@@ -635,5 +640,7 @@ $('.openall').click(function(){
 </div>
 
 </div>
+
+<div id="fu_include"></div>
 </body>
 </html>
