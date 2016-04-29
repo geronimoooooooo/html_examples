@@ -48,7 +48,10 @@
 				<a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a>
 			</li>
 			<li>
-				<a href="http://www.w3schools.com/html/html_examples.asp">W3Schools Examples</a>
+				<a href="http://www.w3schools.com/html/html_examples.asp">W3Schools HTML Examples</a>
+			</li>
+			<li>
+				<a href="http://www.w3schools.com/css/css_examples.asp">W3Schools CSS Examples</a>
 			</li>
 		</ul>
 		</li>
