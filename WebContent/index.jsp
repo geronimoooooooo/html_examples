@@ -77,21 +77,11 @@
 				<li>
 				<a href="http://www.tutorialspark.com/twitterBootstrap/index.php">Bootstrap intro</a>
 			</li>
+			<li>
+				<a href="http://www.tutorialspark.com/twitterBootstrap/TwitterBootstrap_Examples_Demos.php">Tutorialspark Bootstrap Examples</a>
+			</li>
       				</ul>
       		<li/>
-		<li>W3Schools
-		<ul>
-		
-			
-		
-		</ul>
-		</li>
-				<li>Bootstrap
-		<ul>
-			
-			
-		</ul>
-		</li>
 		
 		<li>Online tools
 		<ul>
@@ -102,23 +92,8 @@
 				<a href="http://www.bootply.com/97519">bootply</a>
 			</li>
 		</ul>
-		</li>
+		</li>	
 		
-		<li>Tutorialspark
-		<ul>
-			
-			<li>
-				<a href="http://www.tutorialspark.com/twitterBootstrap/TwitterBootstrap_Examples_Demos.php">Bootstrap Examples</a>
-			</li>
-		</ul>
-		</li>
-		
-				<li>Tutorialspoint
-		<ul>
-		
-			
-		</ul>
-		</li>
 </ul>
       
       </div>
