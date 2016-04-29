@@ -14,7 +14,7 @@
 <title>Start</title>
 <script> 
     $(function(){
-      $("#fu_include").load("fu.jsp"); 
+      $("#fu_include").load("jsp/fu.jsp"); 
     });
     </script>
 </head>
@@ -473,7 +473,39 @@
 
 </div>
   
-  
+
+
+<div class="bs-example">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <br>
+    <div class="alert alert-info">
+        <a href="#" class="close" data-dismiss="alert">×</a>
+        <strong>Note:</strong> The inline form layout is rendered as default vertical form layout if the viewport width is less than 768px. Open the output in a new window and resize the screen to see how it works.
+    </div>
+</div> 
+<div>
+Wenn man in einem Forms mehrere submit buttons hat
+<form  enctype="application/x-www-form-urlencoded" target="_blank">
+   <hr>
+   <input formaction="http://localhost/soscon/formular_is"  formmethod="POST" type="submit" value="Send Formular"/> 
+   <input formaction="http://localhost/soscon/formular_is"  formmethod="POST" type="submit" value="Send Formular"/> 
+   <hr>  
+   
+</form>
+</div> 
   
   
 </div><!-- forms -->
