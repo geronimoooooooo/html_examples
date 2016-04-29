@@ -58,6 +58,8 @@
       			<ul>
       				<li>
 				<a href="http://www.w3schools.com/css/css_examples.asp">W3Schools CSS Examples</a></li>
+				<li>
+				<a href="http://www.tutorialspoint.com/css/index.htm">Tutorialspoint CSS</a></li>
       			</ul>
       		<li/>
       		<li>
