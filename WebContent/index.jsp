@@ -68,7 +68,11 @@
       		<li>
       			Bootstrap
       				<ul>
-      				<li>
+      				
+      					<li>
+				<a href="http://www.tutorialspoint.com/bootstrap/index.htm">Tutorialspoint Bootstrap</a>
+			</li>
+			<li>
 				<a href="http://getbootstrap.com/components/">Bootstrap Components</a>	</li>
 				<li>
 				<a href="http://www.tutorialspark.com/twitterBootstrap/index.php">Bootstrap intro</a>
@@ -111,9 +115,7 @@
 		
 				<li>Tutorialspoint
 		<ul>
-			<li>
-				<a href="http://www.tutorialspoint.com/bootstrap/index.htm">Tutorialspoint</a>
-			</li>
+		
 			
 		</ul>
 		</li>
@@ -126,7 +128,7 @@
 
 
 
-<a href="http://www.w3schools.com/html/default.asp">W3Schools HTML</a>
+
 </div>
 </div>
 
