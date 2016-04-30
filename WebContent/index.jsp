@@ -28,6 +28,8 @@
 <div class="well" id="navigation">
 <div class="row">
 <div class="col-md-4">
+	<a href="ajax.jsp">ajax.jsp</a><br>
+	<hr>
 	<a href="#dropdown">dropdown menu</a><br>
 	<a href="#forms">forms</a><br>
 	<a href="#list">list</a><br>
@@ -40,12 +42,12 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Collapsible external links
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <div id="collapseOne" class="collapse panel-collapse  in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
       	<ul>
       		<li>
@@ -75,9 +77,8 @@
       		<li/>
       		<li>
       			Bootstrap
-      				<ul>
-      				
-      					<li>
+      				<ul>      				
+      		<li>
 				<a href="http://www.tutorialspoint.com/bootstrap/index.htm">Tutorialspoint Bootstrap</a>
 			</li>
 			<li>
@@ -87,6 +88,9 @@
 			</li>
 			<li>
 				<a href="http://www.tutorialspark.com/twitterBootstrap/TwitterBootstrap_Examples_Demos.php">Tutorialspark Bootstrap Examples</a>
+			</li>
+			<li>
+				<a href="http://silviomoreto.github.io/bootstrap-select/">Bootstrap-select</a>
 			</li>
       				</ul>
       		<li/>
@@ -416,8 +420,8 @@
         </div>
     </div>
 
-    <div class="form-group">
-        <label class="col-xs-3 control-label">Username</label>
+    <div class="form-group text-align-left">
+        <label class="col-xs-3 control-label text-align-left">Username</label>
         <div class="col-xs-5">
             <input type="text" class="form-control" name="username" />
         </div>

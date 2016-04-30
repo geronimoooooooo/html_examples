@@ -9,7 +9,7 @@
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/c_css.css">
-<script src="js/c_js.js"></script>
+<script src="js/c_ajax.js"></script>
 
 <title>AjaxServlet2</title>
 </head>
@@ -46,7 +46,7 @@
 
 	<div align="center">
 		<h3>Refresh DIV Content Without Reloading Page using jQuery</h3>
-		<br> Demo by Mohaideen - @ <a href="" target="_blank">SimpleCodeStuffs</a>
+		<hr>
 		<br> <br>
 		<div id="show"
 			style="padding: 10px; border-radius: 9px; border: 3px solid #EE371A; width: 50%;">

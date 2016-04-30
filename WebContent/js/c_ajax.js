@@ -16,6 +16,7 @@ $(document).ready(function() {
 	
 	//dropdown
 	$('#sports').change(function(event) {
+		console.log("Ajax");
 		var sports = $("select#sports").val();
 		$.get('Dropdown', {
 			sportsName : sports
