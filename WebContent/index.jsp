@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/c_css.css">
 <script src="js/c_js.js"></script>
 <script src="js/c_ajax.js"></script>
-<meta>
+
 <title>Start</title>
 <script> 
     $(function(){
