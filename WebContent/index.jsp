@@ -29,6 +29,7 @@
 <div class="row">
 <div class="col-md-4">
 	<a href="ajax.jsp">ajax.jsp</a><br>
+	<a href="html_javascript.jsp">html javascript</a><br>
 	<hr>
 	<a href="#dropdown">dropdown menu</a><br>
 	<a href="#forms">forms</a><br>
