@@ -10,6 +10,7 @@
 <script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/c_css.css">
 <script src="js/c_js.js"></script>
+<script src="js/c_ajax.js"></script>
 <meta>
 <title>Start</title>
 <script> 
