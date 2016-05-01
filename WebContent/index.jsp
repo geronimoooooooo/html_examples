@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="css/c_css.css">
 <script src="js/c_js.js"></script>
 <script src="js/c_ajax.js"></script>
+<link rel="stylesheet" href="css/jquery.toast.min.css">
+<script src="js/jquery.toast.min.js"></script>
 
 <title>Start</title>
 <script> 
-    $(function(){
-      $("#fu_include").load("jsp/fu.jsp"); 
-    });
+
     </script>
 </head>
 <body>
@@ -75,6 +75,9 @@
       		<li/>
       		<li>
       			jQuery
+      			<ul>
+      					<li><a href="http://api.jquery.com/">http://api.jquery.com/</a></li>      					
+      				</ul>
       		<li/>
       		<li>
       			Bootstrap
@@ -478,6 +481,117 @@
 </form>
 
 </div>
+
+
+<div class="bs-example">
+    <h1>Sign Up</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="inputEmail">Email:</label>
+            <div class="col-xs-9">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="inputPassword">Password:</label>
+            <div class="col-xs-9">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="confirmPassword">Confirm Password:</label>
+            <div class="col-xs-9">
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="firstName">First Name:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+            <div class="col-xs-9">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3">Date of Birth:</label>
+            <div class="col-xs-3">
+                <select class="form-control">
+                    <option>Date</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <select class="form-control">
+                    <option>Month</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <select class="form-control">
+                    <option>Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="postalAddress">Address:</label>
+            <div class="col-xs-9">
+                <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3">Gender:</label>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="genderRadios" value="male"> Male
+                </label>
+            </div>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="genderRadios" value="female"> Female
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="news"> Send me latest news and updates.
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+        </div>
+    </form>
+
+
+
+
+
   
 
 
@@ -512,8 +626,61 @@ Wenn man in einem Forms mehrere submit buttons hat
    
 </form>
 </div> 
-  
-  
+
+<div>
+		<form action="https://pcprofil.de/auth/login" method="post" class="form-inline">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-addon">
+                        <i class="fa fa-fw fa-user"></i>
+                    </div>
+                    <input type="text" maxlength="20" class="form-control" name="username" id="login_user" placeholder="Benutzername" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-addon">
+                        <i class="fa fa-fw fa-lock"></i>
+                    </div>
+                    <input type="password" maxlength="100" class="form-control" id="login_password" name="password" placeholder="Passwort" />
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-pcprofil btn-sm btn-block" type="submit">
+                    <i class="fa fa-user fa-fw"></i> Login
+                </button>
+            </div>
+
+            <div class="line2">
+                <div class="clearfix">
+                    <div class="col-xs-5">
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember" value="1">
+                                    Angemeldet bleiben
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <a href="https://pcprofil.de/password/email" class="lost_password">Passwort vergessen</a>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <div class="form-group" id="social-services">
+                            <a title="Login mit Facebook" href="https://pcprofil.de/auth/login-oauth/facebook" class="has-tooltip"><i class="fa fa-facebook-square"></i></a>
+                            <a title="Login mit Google" href="https://pcprofil.de/auth/login-oauth/google" class="has-tooltip"><i class="fa fa-google-plus-square"></i></a>
+                            <a title="Login mit Twitter" href="https://pcprofil.de/auth/login-oauth/twitter" class="has-tooltip"><i class="fa fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<input type="hidden" name="_token" value="iZ0dE2XfxomWwnlo7Sk0d1iQTAs2xzbd6dN4Uoce" />
+		</form>
+  </div>
+</div>  
 </div><!-- forms -->
 
 
@@ -648,9 +815,13 @@ $('.openall').click(function(){
   </div>
 </div>
 </div>
+</div>
 <div>
-<p>Tabs With Dropdown Example</p>
+</div>
 
+<div id="nav" class="well">
+<p>Tabs With Dropdown Example</p>
+<div> 
 <ul class = "nav nav-tabs">
    <li class = "active"><a href = "#">Home</a></li>
    <li><a href = "#">SVN</a></li>
@@ -676,10 +847,32 @@ $('.openall').click(function(){
    <li><a href = "#">PHP</a></li>
 </ul>
 </div>
-
+<hr>
+<div>
+<p class="lead">navbar</p>
+<div class="bs-example">
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">News <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://www.n-tv.de">n-tv</a></li>
+                <li><a href="#">Drafts</a></li>
+                <li><a href="#">Sent Items</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Trash</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 </div>
 
-</div>
+
+
+
 
 <div id="fu_include"></div>
 </body>

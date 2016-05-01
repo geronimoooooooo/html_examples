@@ -5,10 +5,12 @@
 $(function(){
 
 	
-	
-	
-	
-	
+
+ 
+	   $(function(){
+	        $("#fu_include").load("jsp/include_fu.jsp"); 
+	      });
+		
 	
 	
 	
