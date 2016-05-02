@@ -475,7 +475,7 @@
 
     <div class="form-group">
         <div class="col-xs-9 col-xs-offset-3">
-            <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
+            <button type="submit" class="btn btn-primary pull-right" name="signup" value="Sign up">Submit</button>
         </div>
     </div>
 </form>

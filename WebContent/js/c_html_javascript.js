@@ -45,20 +45,19 @@ $(function() {
 	console.log(url);
 	
  $("#exampleTextarea").click(function(){
- $("#p_json_response").text("textarea clicked!");
-
- $.toast({
-	    heading: 'Success',
-	    text: 'Here is some kind of success message with a success icon that you can notice at the left side.',
-	    icon: 'success'
-	});
+	 $("#p_json_response").text("textarea clicked!");
+	
+	 $.toast({
+		    heading: 'Success',
+		    text: 'Here is some kind of success message with a success icon that you can notice at the left side.',
+		    icon: 'success'
+		});
  });	    
  
  $("#bsubmit1").click(function(){
  	var url = $("#input_getCapabilitesURL").val();
  	console.log("button");
  	
-
  	$.ajax({
  	    // The URL for the request //"post.php"
  	    url: url,
