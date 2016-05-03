@@ -13,7 +13,10 @@
 	background-color: orange;
 }
 
-
+#exampleTextarea{
+	font-size: 12px;	
+	font-family: consolas;
+}
 .text-align-left{
   /* text-align:right; */
   text-align:left;

@@ -33,8 +33,26 @@ $(function() {
 	$("#toggler").click(function(){
 		$("#div1").toggleClass("colours-red");
 	});
-	
-	
+	var str_re;
+	$("#fillTextArea").click(function(){
+		console.log("button #fillTextArea");
+		var textArea = document.getElementById("exampleTextarea");
+		document.getElementById("exampleTextarea").value="hi";
+		str_re = "2";
+		str_re = str_re +" fuu";
+		$(exampleTextarea).val(str_re);
+		str_re += "\n";
+		str_re +="new line";
+		$(exampleTextarea).val(str_re);
+		str_re +="<xml>";
+		
+		
+		
+		$(exampleTextarea).val(str_re);
+		//var txta = $(exampleTextarea);
+		//txta.val("123");
+		
+	});
 
 	   //$(function(){
 	

@@ -99,6 +99,11 @@ aaaaaaaaaaaaaaaaaaaaaaa
 				<textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
 			</div>
 		</div>
+		<div class="form-group">
+			<div class="col-sm-9 input-group">
+			<button type="button" id="fillTextArea" class="btn btn-warning pull-right">Text2Response</button>
+			</div>
+		</div>
 		</form>
 </div>
 <div id="json_elemente">
