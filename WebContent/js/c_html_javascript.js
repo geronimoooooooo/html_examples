@@ -36,7 +36,7 @@ $(function() {
 	var procedureName ="fuuuu";
 	var requestComplete="";
 	var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-	var reqEnvelope ="\n\t<env:Envelope" +
+	var reqEnvelope ="\n\t<env:Envelope " +
 					"xmlns:env=\"http://www.w3.org/2003/05/soap-envelope\" \
 					\n\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \
 					\n\txsi:schemaLocation=\"http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope/soap-envelope.xsd\">";
@@ -72,7 +72,10 @@ $(function() {
 		requestComplete +=reqProperty;
 		requestComplete += reqEnding;
 		$(exampleTextarea).val(requestComplete);
-		
+	    
+		var xml_vkbeautified =vkbeautify.xml(requestComplete);
+	    console.log(xml_vkbeautified);
+	    $(exampleTextarea).val(xml_vkbeautified);
 		
 		 var config, editor;
 
@@ -87,11 +90,12 @@ $(function() {
 		        readOnly: true
 		    };
 		
+		  
 		    editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
 		    editor.setSize(900,"100%");
-		    var totalLines = editor.lineCount();  
-		    editor.autoFormatRange({line:0, ch:0}, {line:totalLines})
-		    
+		
+		    	    
+
 		    
 //		var editor = CodeMirror.fromTextArea(exampleTextarea{
 //			value:"fu",

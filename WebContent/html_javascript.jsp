@@ -10,8 +10,11 @@
 <script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/c_css.css">
 <script src="js/c_html_javascript.js"></script>
-<script src="js/codemirror-compressed.js"></script>
+<script src="js/codemirror.js"></script>
 <script src="js/xml.js"></script>
+
+
+<script src="js/vkbeautify.0.99.00.beta.js"></script>
 
 <script src="js/javascript.js"></script>
 <link rel="stylesheet" href="css/elegant.css">
@@ -104,10 +107,7 @@ aaaaaaaaaaaaaaaaaaaaaaa
 
 			<div class="col-sm-7 input-group">
 				<textarea class="form-control" id="exampleTextarea" rows="10">
-				function StringStream(string) {
-  this.pos = 0;
-  this.string = string;
-}
+
 				</textarea>
 			</div>
 		</div>
