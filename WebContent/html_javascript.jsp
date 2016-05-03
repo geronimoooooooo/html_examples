@@ -10,6 +10,13 @@
 <script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/c_css.css">
 <script src="js/c_html_javascript.js"></script>
+<script src="js/codemirror-compressed.js"></script>
+<script src="js/xml.js"></script>
+
+<script src="js/javascript.js"></script>
+<link rel="stylesheet" href="css/elegant.css">
+
+<link rel="stylesheet" href="css/codemirror.css">
 
 <link rel="stylesheet" href="css/jquery.toast.min.css">
 <script src="js/jquery.toast.min.js"></script>
@@ -96,7 +103,12 @@ aaaaaaaaaaaaaaaaaaaaaaa
 			<label for="label_response" class="col-sm-2 control-label">Response</label>
 
 			<div class="col-sm-7 input-group">
-				<textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+				<textarea class="form-control" id="exampleTextarea" rows="10">
+				function StringStream(string) {
+  this.pos = 0;
+  this.string = string;
+}
+				</textarea>
 			</div>
 		</div>
 		<div class="form-group">

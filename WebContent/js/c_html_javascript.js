@@ -11,7 +11,7 @@ function sum(a, b){
 
 $(function() {
 		    
-	
+	console.log("$function loaded");
 	$("#phide").click(function(){
 		$("#p1").show();
 	});
@@ -33,22 +33,80 @@ $(function() {
 	$("#toggler").click(function(){
 		$("#div1").toggleClass("colours-red");
 	});
-	var str_re;
+	var procedureName ="fuuuu";
+	var requestComplete="";
+	var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+	var reqEnvelope ="\n\t<env:Envelope" +
+					"xmlns:env=\"http://www.w3.org/2003/05/soap-envelope\" \
+					\n\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \
+					\n\txsi:schemaLocation=\"http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope/soap-envelope.xsd\">";
+	
+	var reqBodyObs ="\n\t<env:Body>"+ 
+        "\n\t\t<sos:GetObservation" +
+            "\n\t\txmlns:sos=\"http://www.opengis.net/sos/2.0\" "+
+            "\n\t\txmlns:fes=\"http://www.opengis.net/fes/2.0\" "+
+            "\n\t\txmlns:gml=\"http://www.opengis.net/gml/3.2\" "+
+            "\n\t\txmlns:swe=\"http://www.opengis.net/swe/2.0\" " +
+            "\n\t\txmlns:xlink=\"http://www.w3.org/1999/xlink\" "+
+            "\n\t\txmlns:swes=\"http://www.opengis.net/swes/2.0\" service=\"SOS\" version=\"2.0.0\""+
+            "\n\t\txsi:schemaLocation=\"http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd\">";
+	
+	var reqEnding = " \n\t\t\t<sos:responseFormat>http://www.opengis.net/om/2.0 </sos:responseFormat>        \n\t\t</sos:GetObservation>    \n\t</env:Body>\n</env:Envelope>";
+		
 	$("#fillTextArea").click(function(){
+			
+		requestComplete += reqXmlHeader;
+		requestComplete += reqEnvelope;		
+		requestComplete += reqBodyObs;
+		
+		var reqProcedure="\n\n";
+		reqProcedure += "\t\t\t<sos:procedure>"+procedureName+"</sos:procedure>\n";
+			
+		var reqProperty ="\n";
+		for(i=0; i<3; i++){
+			reqProperty +="\t\t\t<sos:observedProperty>"+i+"</sos:observedProperty>\n";
+		}
+	
+		
+		requestComplete +=reqProcedure;
+		requestComplete +=reqProperty;
+		requestComplete += reqEnding;
+		$(exampleTextarea).val(requestComplete);
+		
+		
+		 var config, editor;
+
+		    config = {		    		
+		        lineNumbers: true,
+		        mode: "text/javascript",
+		        lineWrapping: true,
+		        htmlMode: true,
+		        matchClosing: true,
+//		        theme: "elegant",		      
+		        indentWithTabs: true,
+		        readOnly: true
+		    };
+		
+		    editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
+		    editor.setSize(900,"100%");
+		    var totalLines = editor.lineCount();  
+		    editor.autoFormatRange({line:0, ch:0}, {line:totalLines})
+		    
+		    
+//		var editor = CodeMirror.fromTextArea(exampleTextarea{
+//			value:"fu",
+//			mode:"xml",
+//		});
+		
+		
+		
+		
 		console.log("button #fillTextArea");
 		var textArea = document.getElementById("exampleTextarea");
 		document.getElementById("exampleTextarea").value="hi";
-		str_re = "2";
-		str_re = str_re +" fuu";
-		$(exampleTextarea).val(str_re);
-		str_re += "\n";
-		str_re +="new line";
-		$(exampleTextarea).val(str_re);
-		str_re +="<xml>";
 		
 		
 		
-		$(exampleTextarea).val(str_re);
 		//var txta = $(exampleTextarea);
 		//txta.val("123");
 		
