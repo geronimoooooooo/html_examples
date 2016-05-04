@@ -33,28 +33,32 @@ $(function() {
 	$("#toggler").click(function(){
 		$("#div1").toggleClass("colours-red");
 	});
-	var procedureName ="fuuuu";
-	var requestComplete="";
-	var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-	var reqEnvelope ="\n\t<env:Envelope " +
-					"xmlns:env=\"http://www.w3.org/2003/05/soap-envelope\" \
-					\n\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \
-					\n\txsi:schemaLocation=\"http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope/soap-envelope.xsd\">";
 	
-	var reqBodyObs ="\n\t<env:Body>"+ 
-        "\n\t\t<sos:GetObservation" +
-            "\n\t\txmlns:sos=\"http://www.opengis.net/sos/2.0\" "+
-            "\n\t\txmlns:fes=\"http://www.opengis.net/fes/2.0\" "+
-            "\n\t\txmlns:gml=\"http://www.opengis.net/gml/3.2\" "+
-            "\n\t\txmlns:swe=\"http://www.opengis.net/swe/2.0\" " +
-            "\n\t\txmlns:xlink=\"http://www.w3.org/1999/xlink\" "+
-            "\n\t\txmlns:swes=\"http://www.opengis.net/swes/2.0\" service=\"SOS\" version=\"2.0.0\""+
-            "\n\t\txsi:schemaLocation=\"http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd\">";
 	
-	var reqEnding = " \n\t\t\t<sos:responseFormat>http://www.opengis.net/om/2.0 </sos:responseFormat>        \n\t\t</sos:GetObservation>    \n\t</env:Body>\n</env:Envelope>";
 		
 	$("#fillTextArea").click(function(){
 			
+		var procedureName ="fuuuu";
+		var requestComplete="";
+		var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+		var reqEnvelope ="\n\t<env:Envelope " +
+						"xmlns:env=\"http://www.w3.org/2003/05/soap-envelope\" \
+						\n\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \
+						\n\txsi:schemaLocation=\"http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope/soap-envelope.xsd\">";
+		
+		var reqBodyObs ="\n\t<env:Body>"+ 
+	        "\n\t\t<sos:GetObservation" +
+	            "\n\t\txmlns:sos=\"http://www.opengis.net/sos/2.0\" "+
+	            "\n\t\txmlns:fes=\"http://www.opengis.net/fes/2.0\" "+
+	            "\n\t\txmlns:gml=\"http://www.opengis.net/gml/3.2\" "+
+	            "\n\t\txmlns:swe=\"http://www.opengis.net/swe/2.0\" " +
+	            "\n\t\txmlns:xlink=\"http://www.w3.org/1999/xlink\" "+
+	            "\n\t\txmlns:swes=\"http://www.opengis.net/swes/2.0\" service=\"SOS\" version=\"2.0.0\""+
+	            "\n\t\txsi:schemaLocation=\"http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd\">";
+		
+		var reqEnding = " \n\t\t\t<sos:responseFormat>http://www.opengis.net/om/2.0 </sos:responseFormat>        \n\t\t</sos:GetObservation>    \n\t</env:Body>\n</env:Envelope>";
+		
+		
 		requestComplete += reqXmlHeader;
 		requestComplete += reqEnvelope;		
 		requestComplete += reqBodyObs;
@@ -93,24 +97,16 @@ $(function() {
 		  
 		    editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
 		    editor.setSize(900,"100%");
-		
-		    	    
-
-		    
+				    
 //		var editor = CodeMirror.fromTextArea(exampleTextarea{
 //			value:"fu",
 //			mode:"xml",
 //		});
-		
-		
-		
+			
 		
 		console.log("button #fillTextArea");
 		var textArea = document.getElementById("exampleTextarea");
-		document.getElementById("exampleTextarea").value="hi";
-		
-		
-		
+			
 		//var txta = $(exampleTextarea);
 		//txta.val("123");
 		
