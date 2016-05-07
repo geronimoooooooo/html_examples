@@ -59,7 +59,10 @@ aaaaaaaaaaaaaaaaaaaaaaa
 
 <div class="clearfix" >
   <div style="float: left;">left</div>
-  <div style="float: right;">right</div>
+  <div style="float: right;">
+  right
+  <button type="button">Settings</button>
+  </div>
 </div>
 <div class="container"> 
 <div id="content" class="span12">
@@ -116,7 +119,28 @@ aaaaaaaaaaaaaaaaaaaaaaa
 			<button type="button" id="fillTextArea" class="btn btn-warning pull-right">Text2Response</button>
 			</div>
 		</div>
+		<div class="form-group">
+			<div class="col-sm-9 input-group">
+			<button type="button" id="fillTextAreaReset" class="btn btn-warning pull-right">Reset</button>
+			</div>
+		</div>
 		</form>
+</div>
+
+<div id="former" class="well">
+	<form class="form-horizontal" role="form" >
+	
+		<div class="form-group">
+			<div class="col-sm-9 input-group">
+			<button type="button" id="fillTextAreaReset" class="btn btn-warning pull-right">Reset</button>
+			</div>
+		</div>
+		<div class="input_fields_wrap">
+		    <button class="add_field_button">Add More Fields</button>
+		    <div><input type="text" name="mytext[]"></div>
+		</div>
+		
+	</form>
 </div>
 <div id="json_elemente">
 	<p id="p_json_response"> test

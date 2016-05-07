@@ -10,6 +10,23 @@ function sum(a, b){
 }
 
 $(function() {
+	
+	 var max_fields      = 10; //maximum input boxes allowed
+	    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+	    var add_button      = $(".add_field_button"); //Add button ID
+	    
+	    var x = 1; //initlal text box count
+	    $(add_button).click(function(e){ //on add input button click
+	        e.preventDefault();
+	        if(x < max_fields){ //max input box allowed
+	            x++; //text box increment
+	            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+	        }
+	    });
+	    
+	    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+	        e.preventDefault(); $(this).parent('div').remove(); x--;
+	    })
 		    
 	console.log("$function loaded");
 	$("#phide").click(function(){
@@ -53,8 +70,16 @@ $(function() {
 	
 	var reqEnding = " \n\t\t\t<sos:responseFormat>http://www.opengis.net/om/2.0 </sos:responseFormat>        \n\t\t</sos:GetObservation>    \n\t</env:Body>\n</env:Envelope>";
 		
+	$("#fillTextAreaReset").click(function(){
+		editor.toTextArea();
+	//	editor.refresh();
+		document.getElementById("exampleTextarea").value="test";
+	});
+	 var config, editor;
+	 
 	$("#fillTextArea").click(function(){
 			
+		requestComplete ="";
 		requestComplete += reqXmlHeader;
 		requestComplete += reqEnvelope;		
 		requestComplete += reqBodyObs;
@@ -65,19 +90,17 @@ $(function() {
 		var reqProperty ="\n";
 		for(i=0; i<3; i++){
 			reqProperty +="\t\t\t<sos:observedProperty>"+i+"</sos:observedProperty>\n";
-		}
-	
-		
+		}		
 		requestComplete +=reqProcedure;
 		requestComplete +=reqProperty;
 		requestComplete += reqEnding;
-		$(exampleTextarea).val(requestComplete);
+	//	$(exampleTextarea).val(requestComplete);
 	    
 		var xml_vkbeautified =vkbeautify.xml(requestComplete);
 	    console.log(xml_vkbeautified);
 	    $(exampleTextarea).val(xml_vkbeautified);
 		
-		 var config, editor;
+//		 var config, editor;
 
 		    config = {		    		
 		        lineNumbers: true,
@@ -89,8 +112,10 @@ $(function() {
 		        indentWithTabs: true,
 		        readOnly: true
 		    };
-		
-		  
+		    if(editor !=undefined){
+		    	editor.toTextArea();
+		    	editor.refresh();
+		    	}
 		    editor = CodeMirror.fromTextArea(document.getElementById("exampleTextarea"), config);
 		    editor.setSize(900,"100%");
 		

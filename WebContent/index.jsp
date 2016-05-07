@@ -403,7 +403,38 @@
         </div>
     </div>
 </form>
+<hr>
+	<div id="temporalFilter" class="row">
+		<div class="c_container_inner well">
+			<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<div class="checkbox col-sm-2 ">
+							<label class="pull-right"><input type="checkbox" value="tempFilter" style="text-align:right;"></label>
+						</div>
+						<label for="l_tempFilter" class="control-label ">Enable temporal filter</label>											
+					</div>
+					
+					<div class="form-group">
+						<div class="checkbox col-sm-2 ">
+							<label class="pull-right"><input type="checkbox" value="tempFilter" style="text-align:right;"></label>
+						</div>
+						<div class="col-sm-10">
+							<label for="l_tempFilter" class="control-label ">Enable temporal filter</label>							
+						</div>					
+					</div>
+					
+					
+					<div class="form-group">					
+						<label for="l_tempFilter" class="col-sm-2 control-label">Temporal filter</label>
 
+						<div class="checkbox">
+							<label class=""><input type="checkbox" value="tempFilter" style="text-align:right;">(activate)</label>
+						</div>						
+					</div>			
+				</form>
+		</div>
+	</div>
+	
 <div>
 <link href="/vendor/balloon/balloon.min.css" rel="stylesheet" />
 
