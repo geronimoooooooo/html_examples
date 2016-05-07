@@ -23,7 +23,7 @@
 <div class="container ">
 
 
-<h1 class="text-center">Examples</h1>
+<h1 class="text-center">Examples!</h1>
 
 <div class="well" id="navigation">
 <div class="row">
