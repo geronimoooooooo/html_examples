@@ -62,9 +62,8 @@ $(function() {
 	 
 	$("#fillTextArea").click(function(){
 			
-<<<<<<< HEAD
+
 		requestComplete ="";
-=======
 		var procedureName ="fuuuu";
 		var requestComplete="";
 		var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
@@ -86,7 +85,7 @@ $(function() {
 		var reqEnding = " \n\t\t\t<sos:responseFormat>http://www.opengis.net/om/2.0 </sos:responseFormat>        \n\t\t</sos:GetObservation>    \n\t</env:Body>\n</env:Envelope>";
 		
 		
->>>>>>> branch 'master' of https://github.com/geronimoooooooo/html_examples.git
+
 		requestComplete += reqXmlHeader;
 		requestComplete += reqEnvelope;		
 		requestComplete += reqBodyObs;
