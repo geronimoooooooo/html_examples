@@ -6,11 +6,18 @@ function myFunc() {
 
 function sum(a, b){
 	return a+b;
-
 }
+$("div").text($("form").serialize());
 
 $(function() {
-	
+
+	$('#addForm').click(function(){		
+		$("#p33").text($("#registrationForm").serialize());
+		//$( "#formTemplate" ).clone().val().appendTo('#registrationForm');
+		var formField = $( "#formTemplate" ).clone();
+		formField.removeAttr("style");
+		formField.appendTo('#registrationForm');
+	});
 	 var max_fields      = 10; //maximum input boxes allowed
 	    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
 	    var add_button      = $(".add_field_button"); //Add button ID

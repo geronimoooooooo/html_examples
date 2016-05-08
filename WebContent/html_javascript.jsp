@@ -146,6 +146,151 @@ aaaaaaaaaaaaaaaaaaaaaaa
 	<p id="p_json_response"> test
 	</p>
 </div>
+<hr>
+
+<div id="register">
+<form id="registrationForm" class="form-horizontal">
+<div id="formTemplate" class="well" style="display: none;">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Full name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="firstName" placeholder="First name" />
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+        </div>
+    </div>
+
+    <div class="form-group text-align-left">
+        <label class="col-xs-3 control-label text-align-left">Username</label>
+        <div class="col-xs-5">
+            <input type="text"  name="username" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Password</label>
+        <div class="col-xs-5">
+            <input type="password" class="form-control" name="password" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Gender</label>
+        <div class="col-xs-5">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="male" /> Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="female" /> Female
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="other" /> Other
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Date of birth</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/DD" />
+        </div>
+    </div>
+    </div>
+    
+    
+    
+
+<div id="former1" class="well">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Full name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="firstName" placeholder="First name" />
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+        </div>
+    </div>
+
+    <div class="form-group text-align-left">
+        <label class="col-xs-3 control-label text-align-left">Username</label>
+        <div class="col-xs-5">
+            <input type="text"  name="username" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Password</label>
+        <div class="col-xs-5">
+            <input type="password" class="form-control" name="password" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Gender</label>
+        <div class="col-xs-5">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="male" /> Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="female" /> Female
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="other" /> Other
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Date of birth</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/DD" />
+        </div>
+    </div>
+    </div>
+    
+
+
+  
+</form>
+<div class="col-xs-9 col-xs-offset-3">
+            <button type="button"  id="addForm" class="btn btn-primary pull-right" >Add1</button>
+        </div>
+        <p id="p33">formular</p>
+</div>
+
+
+
+
+
+
+
 </div>
 </div>
 
