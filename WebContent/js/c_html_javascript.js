@@ -64,7 +64,7 @@ $(function() {
 			
 
 		requestComplete ="";
-		var procedureName ="fuuuu";
+		var procedureName ="foi";
 		var requestComplete="";
 		var reqXmlHeader ="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
 		var reqEnvelope ="\n\t<env:Envelope " +
@@ -140,8 +140,7 @@ $(function() {
 	});
 
 	   //$(function(){
-	
-	
+		
 
 	
 	var url = $("#input_getCapabilitesURL").val();

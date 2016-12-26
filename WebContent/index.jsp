@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/jquery.toast.min.css">
 <script src="js/jquery.toast.min.js"></script>
 
-<title>Start</title>
+<title>html_examples</title>
 <script> 
 
     </script>
@@ -28,6 +28,7 @@
 <div class="well" id="navigation">
 <div class="row">
 <div class="col-md-4">
+	<a href="startProject.jsp">startProject</a><br>
 	<a href="ajax.jsp">ajax.jsp</a><br>
 	<a href="html_javascript.jsp">html javascript</a><br>
 	<hr>
@@ -292,6 +293,17 @@
 <div style = "padding: 10px 10px 10px;">
    
    <form class = "bs-example bs-example-form" role = "form">
+   
+   <div class="form-group">
+	  <div class="input-group input-group-sm" >
+		  <span class="input-group-btn">
+   		  <button id="b1" class="btn btn-default" type="button">
+   		  <span class="glyphicon glyphicon-calendar">b</span></button>
+   			</span>
+   		<input id="dr" class="form-control" type="text" name="dr">
+	</div>
+	</div>
+    				
       <div class = "input-group">
          <span class = "input-group-addon">@</span>
          <input type = "text" class = "form-control" placeholder = "twitterhandle">
