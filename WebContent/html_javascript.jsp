@@ -13,19 +13,15 @@
 <script src="js/codemirror.js"></script>
 <script src="js/xml.js"></script>
 
-
 <script src="js/vkbeautify.0.99.00.beta.js"></script>
 
 <script src="js/javascript.js"></script>
 <link rel="stylesheet" href="css/elegant.css">
-
 <link rel="stylesheet" href="css/codemirror.css">
-
 <link rel="stylesheet" href="css/jquery.toast.min.css">
 <script src="js/jquery.toast.min.js"></script>
 
 <title>Insert title here</title>
-
 </head>
 <body>
 

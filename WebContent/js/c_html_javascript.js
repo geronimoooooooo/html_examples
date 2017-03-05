@@ -60,6 +60,10 @@ $(function() {
 	});
 	 var config, editor;
 	 
+	 $(":button").click(function(){
+		 
+	 });
+	 
 	$("#fillTextArea").click(function(){
 			
 
