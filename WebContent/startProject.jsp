@@ -22,6 +22,16 @@
 	<ol><li>Dynamic Web Project erstellen</>
 		<li>Ordnerstruktur erstellen mit WebContent/css/c_css.css und
 			WebContent/js/c_js.js</li>
+		<li>Libs wie gson, logback, quartz, taglibs(4) in  WEB-INF/lib </li>
+		<li>In web.xml
+		<pre><code>
+			&lt;servlet&gt;
+			    &lt;servlet-name&gt;LoadOnStartAppConfiguration&lt;/servlet-name&gt;
+			    &lt;servlet-class&gt;utility.LoadOnStartAppConfiguration&lt;/servlet-class&gt;
+			    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+		    &lt;/servlet&gt;</code></pre>
+		    
+		 </li>
 		<li>In WebContent index.jsp erstellen und mit nachfolgendem Inhalt ersetzen 
 		<pre>
 	<code>
